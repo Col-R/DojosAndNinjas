@@ -30,12 +30,11 @@ public class DojoController {
 	}
 	@PostMapping("/dojos/new")
 	public String addDojo(@Valid @ModelAttribute("dojo")Dojo dojo, BindingResult result) {
-		Long idDojo = dojo.getId();
 		if(result.hasErrors()) {
 			return "dojoadd.jsp";
 		}
-		this.dService.createAlbum(dojo);
-		return "redirect:/dojos/" + idDojo;
+		Dojo oneDojo = this.dService.createAlbum(dojo);
+		return "redirect:/dojos/" + oneDojo.getId();
 	}
 	
 	//SHOW

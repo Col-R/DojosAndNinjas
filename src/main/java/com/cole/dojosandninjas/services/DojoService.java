@@ -18,4 +18,7 @@ public class DojoService {
 	public Dojo getOneDojo(Long id) {
 		return this.dRepo.findById(id).orElse(null);
 	}
+	public Dojo createAlbum(Dojo dojo) {
+		return this.dRepo.save(dojo);
+	}
 }

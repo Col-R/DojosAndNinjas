@@ -15,8 +15,8 @@
 <h2>New Ninja</h2>
 
 <form:form method = "POST" action = "/ninjas/newNinja" modelAttribute = "ninja">
+	<form:label path="dojoLocation">Dojo Name: </form:label>
 	<form:select path="dojoLocation">
-	<form:label path="dojoLocation">Dojo</form:label>
 		<c:forEach items = "${dojos}" var = "dojo">
 			<option value = "${dojo.id}">${dojo.dojoName}</option>
 		</c:forEach>

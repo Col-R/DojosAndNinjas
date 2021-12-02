@@ -33,6 +33,8 @@
     </c:forEach>
   </tbody>
 </table>
+<h5><a href = "/">Add a new Dojo</a></h5>
+<h5><a href = "/ninjas/new">Add a new Ninja</a></h5>
 </div>
 </body>
 </html>

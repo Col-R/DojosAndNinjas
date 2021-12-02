@@ -26,6 +26,7 @@
 	<button type="submit" class="btn btn-primary">Submit</button>
 </form:form>
 
+<h5><a href = "/ninjas/new">Add a new Ninja</a></h5>
 </div>
 </div>
 </body>

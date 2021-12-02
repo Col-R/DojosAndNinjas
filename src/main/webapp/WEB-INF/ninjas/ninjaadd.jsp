@@ -40,6 +40,8 @@
 
 	<button type="submit" class="btn btn-primary">Submit</button>
 </form:form>
+<h5><a href = "/">Add a new Dojo</a></h5>
+
 </div>
 </body>
 </html>

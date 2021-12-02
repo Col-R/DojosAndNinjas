@@ -15,10 +15,24 @@
 <div class="container">
 <h1>${dojoDetails.dojoName} Ninjas!</h1>
 <hr>
-<c:forEach items = "${dojoDetails.ninjas}" var = "ninja">
-		<li>${ninja.firstName}</li>
-</c:forEach>
-
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Age</th>
+    </tr>
+  </thead>
+  <tbody>
+  <c:forEach items = "${dojoDetails.ninjas}" var = "ninja">
+    <tr>
+      <td>${ninja.firstName }</td>
+      <td>${ninja.lastName }</td>
+      <td>${ninja.age}</td>
+    </tr>
+    </c:forEach>
+  </tbody>
+</table>
 </div>
 </body>
 </html>

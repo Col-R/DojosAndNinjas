@@ -13,9 +13,9 @@
 <body>
 
 <div class="container">
-<h1>Dojo Details</h1>
-<p>${dojoDetails.dojoName}</p>
+<h1>${dojoDetails.dojoName} Ninjas!</h1>
 <hr>
+
 
 </div>
 </body>

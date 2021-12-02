@@ -12,6 +12,11 @@
 </head>
 <body>
 
-<h3>Dojo info here!</h3>
+<div class="container">
+<h1>Dojo Details</h1>
+<p>${dojoDetails.dojoName}</p>
+<hr>
+
+</div>
 </body>
 </html>

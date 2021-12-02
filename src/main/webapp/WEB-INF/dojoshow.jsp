@@ -15,7 +15,9 @@
 <div class="container">
 <h1>${dojoDetails.dojoName} Ninjas!</h1>
 <hr>
-
+<c:forEach items = "${dojoDetails.ninjas}" var = "ninja">
+		<li>${ninja.name}</li>
+</c:forEach>
 
 </div>
 </body>
